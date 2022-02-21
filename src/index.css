@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap);
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --dark-green: #024d3a;
+  --black: #18191f;
+  --black-2: rgba(24, 25, 31, 0.659);
+  --orange: #f88508;
+  --wine: #8a2a3c;
+  --hero: url('../assets/mockups/Mask\ Group.png');
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
