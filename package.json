@@ -4,8 +4,11 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --testURL http://127.0.0.1:3000",
+    "test:watch": "yarn test -- --watch",
+    "eject": "react-scripts eject",
     "preview": "vite preview"
   },
   "dependencies": {
