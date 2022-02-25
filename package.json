@@ -1,5 +1,6 @@
 {
   "name": "app_pie",
+  "homepage": "https://main.db0j865ito1at.amplifyapp.com/react-app",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -12,6 +13,7 @@
     "@emotion/styled": "^11.8.1",
     "@mui/material": "^5.4.2",
     "@mui/styled-engine-sc": "^5.4.2",
+    "aws-amplify": "^4.3.14",
     "axios": "^0.26.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
