@@ -15,10 +15,10 @@ const Showcase = () => {
         <p className="desc">De-risking the agricultural value chain.</p>
         <BtnGrp>
           <Cta>
-            <Link to="/">Get Started</Link>
+            <Link to="/sign-up">Get Started</Link>
           </Cta>
           <Cta>
-            <Link to="/" className="outline">
+            <Link to="/sign-in" className="outline">
               Login
             </Link>
           </Cta>
@@ -37,6 +37,7 @@ const Showcase = () => {
 const Cont = styled.div`
   height: auto;
   padding: 0 0 0 5%;
+  margin-bottom: 10vh;
   display: grid;
   grid-template-columns: 40% auto;
   grid-gap: 50px;
@@ -72,7 +73,7 @@ const Text = styled.div`
 `;
 const BtnGrp = styled.div`
   /* p  */
-  width: 50%;
+  width: 60%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;

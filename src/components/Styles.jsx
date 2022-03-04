@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const Cta = styled.div`
-  a {
+  a, button {
     background: var(--orange);
     padding: 10px 17px;
     color: #fff;
     border-radius: 5px;
+    outline: none;
+    border: none;
     transition: all 0.5s;
     &:hover {
       background: #fff;
