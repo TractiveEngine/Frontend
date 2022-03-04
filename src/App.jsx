@@ -3,6 +3,7 @@ import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home";
 import styled from "styled-components";
+import Signin from "./pages/auth/Signin";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Cont>
         <Routes className="pages">
           <Route path="/" exact element={<Home />} />
+          <Route path="/sign-in" exact element={<Signin />} />
         </Routes>
       </Cont>
 

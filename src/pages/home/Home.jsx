@@ -5,6 +5,7 @@ import { Cta } from "../../components/Styles";
 import { Data } from "./Features";
 import Showcase from "./Showcase";
 import mobile from "../../../assets/mockups/iPhone X.png";
+import Benefits from "./Benefits";
 
 const Home = () => {
   return (
@@ -15,7 +16,9 @@ const Home = () => {
         <div className="cards">
           {Data.map((feature, index) => (
             <div className="card" key={index}>
-              <div className="icon">icon</div>
+              <div className="icon">
+                {feature.icon}
+              </div>
               <div className="info">
                 <div className="before"></div>
                 <h4 className="title">{feature.title}</h4>
@@ -37,13 +40,14 @@ const Home = () => {
             farming for yourself.
           </p>
           <Cta className="btn">
-            <Link to="/">Get Started</Link>
+            <Link to="/sign-in">Get Started</Link>
           </Cta>
         </div>
         <div className="image">
           <img src={mobile} alt="" />
         </div>
       </Mobile>
+      <Benefits/>
     </Cont>
   );
 };
@@ -54,7 +58,7 @@ const Cont = styled.div`
 `;
 const HowItWorks = styled.div`
   /* p  */
-  padding: 8% 5%;
+  padding: 10vh 5% 8%;
   .header {
     font-size: 36px;
     margin-bottom: 30px;
@@ -79,6 +83,12 @@ const HowItWorks = styled.div`
       margin: auto;
     }
 
+    .icon {
+      margin-bottom: 20px;
+      color: var(--dark-green);
+      font-size: 70px;
+    }
+
     .before {
       width: 20px;
       height: 20px;
@@ -100,10 +110,12 @@ const HowItWorks = styled.div`
     .info {
       .title {
         margin-bottom: 10px;
+        font-size: 24px;
       }
 
       .content {
         font-size: 16px;
+        line-height: 130%;
         color: var(--black-2);
       }
     }
