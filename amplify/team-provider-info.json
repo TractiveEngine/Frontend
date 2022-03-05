@@ -1,28 +1,23 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-frontend-dev-190021-authRole",
-      "UnauthRoleArn": "arn:aws:iam::093526545521:role/amplify-frontend-dev-190021-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::093526545521:role/amplify-frontend-dev-190021-authRole",
+      "AuthRoleName": "amplify-frontend-dev-132504-authRole",
+      "UnauthRoleArn": "arn:aws:iam::093526545521:role/amplify-frontend-dev-132504-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::093526545521:role/amplify-frontend-dev-132504-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-frontend-dev-190021-deployment",
-      "UnauthRoleName": "amplify-frontend-dev-190021-unauthRole",
-      "StackName": "amplify-frontend-dev-190021",
-      "StackId": "arn:aws:cloudformation:us-east-1:093526545521:stack/amplify-frontend-dev-190021/51f1d9f0-98c0-11ec-ba10-0a85688e4491",
-      "AmplifyAppId": "d3npug6vb3ndxh"
-    }
-  },
-  "engine": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-frontend-engine-194955-authRole",
-      "UnauthRoleArn": "arn:aws:iam::093526545521:role/amplify-frontend-engine-194955-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::093526545521:role/amplify-frontend-engine-194955-authRole",
-      "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-frontend-engine-194955-deployment",
-      "UnauthRoleName": "amplify-frontend-engine-194955-unauthRole",
-      "StackName": "amplify-frontend-engine-194955",
-      "StackId": "arn:aws:cloudformation:us-east-1:093526545521:stack/amplify-frontend-engine-194955/3d0bcc60-98c7-11ec-a4b4-0a5ae603a263",
-      "AmplifyAppId": "d2xmctm6f7e35n"
+      "DeploymentBucketName": "amplify-frontend-dev-132504-deployment",
+      "UnauthRoleName": "amplify-frontend-dev-132504-unauthRole",
+      "StackName": "amplify-frontend-dev-132504",
+      "StackId": "arn:aws:cloudformation:us-east-1:093526545521:stack/amplify-frontend-dev-132504/521d6300-9c7f-11ec-897b-121564f84bd7",
+      "AmplifyAppId": "d7hche4mkv4xq"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d7hche4mkv4xq",
+          "type": "cicd"
+        }
+      }
     }
   }
 }
