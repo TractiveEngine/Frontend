@@ -7,15 +7,27 @@ import tractor from "../../../assets/mockups/unsplash_6NMrg-7Hkyo.png";
 import field from "../../../assets/mockups/Group 20.png";
 import img from "../../../assets/mockups/Group 34080.png";
 
-const Signin = () => {
+const SignUp = () => {
   return (
     <Cont>
       <Left>
         <div className="header">
           <h3>Welcome to Tractive-Engine!</h3>
-          <p>Sign In to Continue</p>
+          <p>Join us to de-risk the agricultural value chain together.</p>
         </div>
         <Form>
+          <FormControl>
+            <InputField>
+              <label htmlFor="">Full Name</label>
+              <Input type="text" placeholder="our full name..." />
+            </InputField>
+          </FormControl>
+          <FormControl>
+            <InputField>
+              <label htmlFor="">Phone Number</label>
+              <Input type="number" placeholder="Your phone number..." />
+            </InputField>
+          </FormControl>
           <FormControl>
             <InputField>
               <label htmlFor="">Email</label>
@@ -28,17 +40,13 @@ const Signin = () => {
               <Input type="password" placeholder="Password" />
             </InputField>
           </FormControl>
-          <div className="verifications">
-            <div className="checkbox">Remember me</div>
-            <div className="f_password">ForgotPassword? </div>
-          </div>
           <FormControl>
             <InputField>
               <Cta className="submit">
-                <button type="submit">Sign In</button>
+                <button type="submit">Sign Up</button>
               </Cta>
               <p>
-                Don't have an account? <Link to="/sign-up"> Sign Up</Link>
+                Already have an account? <Link to="/sign-in"> Sign In</Link>
               </p>
             </InputField>
           </FormControl>
@@ -230,4 +238,4 @@ text-align: center;
   }
 `;
 
-export default Signin;
+export default SignUp;

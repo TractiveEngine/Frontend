@@ -6,6 +6,7 @@ import { Data } from "./Features";
 import Showcase from "./Showcase";
 import mobile from "../../../assets/mockups/iPhone X.png";
 import Benefits from "./Benefits";
+import Footer from "../../components/footer/Footer";
 
 const Home = () => {
   return (
@@ -48,6 +49,7 @@ const Home = () => {
         </div>
       </Mobile>
       <Benefits/>
+      <Footer />
     </Cont>
   );
 };

@@ -15,8 +15,8 @@ const Footer = () => {
       <Left>
         <Logo>
           <Link to="/">
-                      {/* <img src={logo} alt="" /> */}
-                      Logo
+            {/* <img src={logo} alt="" /> */}
+            Tractive <span>Engine</span>
           </Link>
         </Logo>
         <p className="about">
@@ -40,44 +40,51 @@ const Footer = () => {
 
       <Right>
         <Links>
-          <h3 className="heading">Raroin</h3>
+          <h3 className="heading">Products</h3>
           <ul className="links">
             <li className="link">
-              <Link to="/contact">Marketplace</Link>
+              <Link to="#">IoT Telematic Devices</Link>
+            </li>
+            <li className="link">
+              <Link to="#">Retail Investment</Link>
+            </li>
+            <li className="link">
+              <Link to="#">Mini Storage</Link>
+            </li>
+            <li className="link">
+              <Link to="#">Farm Produces</Link>
             </li>
           </ul>
         </Links>
-        <Links>
-          <h3 className="heading">Assets</h3>
-          <ul className="links">
-            <li className="link">
-              <Link to="/contact">Profile</Link>
-            </li>
-            <li className="link">
-              <Link to="/shop">Creators</Link>
-            </li>
-            <li className="link">
-              <Link to="/shop">Collections</Link>
-            </li>
-            <li className="link">
-              <Link to="/shop">Activity</Link>
-            </li>
-          </ul>
-        </Links>
+
         <Links>
           <h3 className="heading">Company</h3>
           <ul className="links">
             <li className="link">
-              <Link to="/contact">Upload Types</Link>
+              <Link to="#">About Us</Link>
             </li>
             <li className="link">
-              <Link to="/shop">Upload</Link>
+              <Link to="#">Farmers</Link>
             </li>
             <li className="link">
-              <Link to="/shop">Connect Wallets</Link>
+              <Link to="#">Partners</Link>
             </li>
             <li className="link">
-              <Link to="/shop">Item details</Link>
+              <Link to="#">Join as Agent</Link>
+            </li>
+          </ul>
+        </Links>
+        <Links>
+          <h3 className="heading">Support</h3>
+          <ul className="links">
+            <li className="link">
+              <Link to="#">Help Center</Link>
+            </li>
+            <li className="link">
+              <Link to="#">Legal</Link>
+            </li>
+            <li className="link">
+              <Link to="#">Nearby Farmers</Link>
             </li>
           </ul>
         </Links>
@@ -95,7 +102,7 @@ const Cont = styled.div`
   background: #000;
   color: #fff;
   padding: 5% 8%;
-position: absolute;
+  position: relative;
   margin-bottom: -200px;
   left: 0;
   bottom: 0;
@@ -106,16 +113,21 @@ position: absolute;
   }
 `;
 const Logo = styled.div`
-  margin-bottom: 20px;
-  a {
-    color: var(--Color-1);
-    transition: all 0.5s;
+  img {
+    width: 100px;
+  }
 
-    &:hover {
-      color: var(--Color-2);
+  a {
+    color: var(--dark-green);
+    font-size: 18px;
+
+    span {
+      color: var(--wine);
+      font-size: 18px;
     }
   }
 `;
+
 const Links = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);

@@ -35,6 +35,7 @@ const Signup = () => {
               <Input type="password" />
             </InputField>
           </FormControl>
+          
         </Form>
       </Left>
       <Right></Right>
