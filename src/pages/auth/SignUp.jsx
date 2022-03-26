@@ -19,7 +19,7 @@ const SignUp = () => {
           <FormControl>
             <InputField>
               <label htmlFor="">Full Name</label>
-              <Input type="text" placeholder="our full name..." />
+              <Input type="text" placeholder="Your full name..." />
             </InputField>
           </FormControl>
           <FormControl>
