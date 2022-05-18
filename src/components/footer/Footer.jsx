@@ -13,15 +13,12 @@ const Footer = () => {
   return (
     <Cont>
       <Left>
-        <Logo>
-          <Link to="/">
-                      {/* <img src={logo} alt="" /> */}
-                      Logo
-          </Link>
-        </Logo>
-        <p className="about">
-          {/* raroin is a shared liquidity NFT market smart contract */}
-        </p>
+        <div className="nav_links">
+          <Link to="/">Home</Link>
+          <Link to="/">About</Link>
+          <Link to="/">Contact</Link>
+        </div>
+
         <div className="social_links">
           <Link to="/">
             <RiFacebookLine />
@@ -39,48 +36,7 @@ const Footer = () => {
       </Left>
 
       <Right>
-        <Links>
-          <h3 className="heading">Raroin</h3>
-          <ul className="links">
-            <li className="link">
-              <Link to="/contact">Marketplace</Link>
-            </li>
-          </ul>
-        </Links>
-        <Links>
-          <h3 className="heading">Assets</h3>
-          <ul className="links">
-            <li className="link">
-              <Link to="/contact">Profile</Link>
-            </li>
-            <li className="link">
-              <Link to="/shop">Creators</Link>
-            </li>
-            <li className="link">
-              <Link to="/shop">Collections</Link>
-            </li>
-            <li className="link">
-              <Link to="/shop">Activity</Link>
-            </li>
-          </ul>
-        </Links>
-        <Links>
-          <h3 className="heading">Company</h3>
-          <ul className="links">
-            <li className="link">
-              <Link to="/contact">Upload Types</Link>
-            </li>
-            <li className="link">
-              <Link to="/shop">Upload</Link>
-            </li>
-            <li className="link">
-              <Link to="/shop">Connect Wallets</Link>
-            </li>
-            <li className="link">
-              <Link to="/shop">Item details</Link>
-            </li>
-          </ul>
-        </Links>
+      <p>&copy; Tractiktive Engine All rights reserved</p>
       </Right>
       {/* <div className="copy_right">Copyright 2022. Coded by Z3phyron_Snides. </div> */}
     </Cont>
@@ -88,18 +44,18 @@ const Footer = () => {
 };
 
 const Cont = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
+  display: flex;
+  justify-content: space-between;
+ align-items: center;
   width: 100%;
   background: #000;
   color: #fff;
-  padding: 5% 8%;
-position: absolute;
+  padding: 2% 8%;
+  /* position: absolute; */
   margin-bottom: -200px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  /* left: 0; */
+  /* bottom: 0; */
+  /* width: 100%; */
 
   @media (max-width: 500px) {
     grid-template-columns: repeat(1, 1fr);
@@ -123,7 +79,7 @@ const Links = styled.div`
   align-items: flex-start;
 
   a {
-    color: var(--Color-4);
+    color: #fff;
     transition: all 0.5s;
 
     &:hover {
@@ -138,19 +94,33 @@ const Links = styled.div`
   }
 `;
 const Left = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 20px;
+  a{
+     color: #fff;
+  }
+ 
+  .nav_links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
   .social_links {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     display: flex;
 
     a {
-      width: 50px;
-      height: 50px;
-      background: var(--gray-blue);
+      width: 30px;
+      height: 30px;
+      background: rgba(57, 57, 57, 0.2);
       display: flex;
       justify-content: center;
       border-radius: 50px;
       margin-right: 20px;
-      color: var(--black);
+      color: #fff;
       font-size: 20px;
       align-items: center;
     }
@@ -158,7 +128,7 @@ const Left = styled.div`
 `;
 const Right = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 30px;
 
   @media (max-width: 900px) {
