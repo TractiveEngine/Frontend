@@ -21,6 +21,7 @@ const Fleet = () => {
 
 const Card = styled.div`
   width: 200px;
+  margin: 0 20px;
   height: auto;
   border-radius: 10px;
   overflow: hidden;

@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { FaArrowRight } from "react-icons/fa";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+// Default theme
+import "@splidejs/react-splide/css";
 
 const Sell = () => {
   return (
@@ -8,23 +11,42 @@ const Sell = () => {
       <Header>
         <button>Sell Produce</button>
       </Header>
-      <ProductList>
-        <Card>
-          <Image></Image>
-        </Card>
-        <Card>
-          <Image></Image>
-        </Card>
-        <Card>
-          <Image></Image>
-        </Card>
+      <Splide
+        className="My"
+        options={{
+          arrows: false,
+          drag: "free",
+          gap: "1rem",
+          perMove: 1,
+          fixedWidth: "12.5rem",
+          pagination: false,
+        }}
+      >
+        <SplideSlide>
+          <div className="add_agent">
+            <button>
+              <FaArrowRight />
+            </button>
+          </div>
+        </SplideSlide>
+        <SplideSlide>
+          <Card>
+            <Image></Image>
+          </Card>
+        </SplideSlide>
+        <SplideSlide>
+          <Card>
+            <Image></Image>
+          </Card>
+        </SplideSlide>
+        <SplideSlide>
+          <Card>
+            <Image></Image>
+          </Card>
+        </SplideSlide>
+      </Splide>
 
-        <div className="add_agent">
-          <button>
-            <FaArrowRight />
-          </button>
-        </div>
-      </ProductList>
+     
     </Cont>
   );
 };
@@ -32,6 +54,27 @@ const Sell = () => {
 const Cont = styled.div`
   /* padding-top: 30vh; */
   margin-bottom: 50px;
+
+  .add_agent {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    button {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      background: green;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      outline: none;
+      color: #fff;
+      border: none;
+    }
+  }
 `;
 
 const Card = styled.div`

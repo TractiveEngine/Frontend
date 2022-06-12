@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Rent from "./Rent";
 import Sell from "./Sell";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+// Default theme
+import "@splidejs/react-splide/css";
 
 const BuyNsell = () => {
   return (
@@ -13,7 +16,7 @@ const BuyNsell = () => {
       </SubHeader>
       <Sell />
       <Rent/>
-      <FleetList></FleetList>
+     
     </Cont>
   );
 };

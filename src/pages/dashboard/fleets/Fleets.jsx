@@ -1,19 +1,40 @@
 import React from 'react'
 import Fleet from './Fleet';
 import styled from "styled-components";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+// Default theme
+import "@splidejs/react-splide/css";
 
 const Fleets = () => {
   return (
     <Cont>
       <Header>Fleets</Header>
-      <FleetList>
-        <Fleet/>
-        <Fleet/>
-        <Fleet />
-         <div className="add_agent">
-          <button>+</button>
-        </div>
-      </FleetList>
+      <Splide
+        className="My"
+        options={{
+          arrows: false,
+          drag: "free",
+          gap: "1rem",
+          perMove: 1,
+          fixedWidth: "12.5rem",
+          pagination: false,
+        }}
+      >
+        <SplideSlide>
+          <div className="add_agent">
+            <button>+</button>
+          </div>
+        </SplideSlide>
+        <SplideSlide className='slide'>
+           <Fleet />
+        </SplideSlide>
+        <SplideSlide className='slide'>
+           <Fleet />
+        </SplideSlide>
+       
+     
+      </Splide>
+     
     </Cont>
   );
 }
@@ -21,6 +42,38 @@ const Fleets = () => {
 
 const Cont = styled.div`
   /* padding-top: 30vh; */
+
+  .My {
+    position: relative;
+    /* width: 100%;
+    background: #000; */
+  }
+
+  .slide{
+    margin: 0 20px;
+    width: 100%;
+  }
+
+  .add_agent {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    button {
+      width: 50px;
+      height: 50px;
+      font-size: 50px;
+      background: green;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      outline: none;
+      color: #fff;
+      border: none;
+    }
+  }
 `;
 
 const Header = styled.div`
@@ -47,21 +100,7 @@ const FleetList = styled.ul`
   gap: 30px;
   align-items: center;
 
-  .add_agent {
-    button {
-      width: 30px;
-      height: 30px;
-      background: green;
-      border-radius: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      outline: none;
-      color: #fff;
-      border: none;
-    }
-  }
+
 `;
 
 
