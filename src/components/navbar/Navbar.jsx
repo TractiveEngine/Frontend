@@ -79,9 +79,11 @@ const Logo = styled.div`
 
   a {
     color: var(--dark-green);
+    font-size: 20px;
 
     span {
       color: var(--wine);
+      font-size: 20px;
     }
   }
 `;

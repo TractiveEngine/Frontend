@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Cta } from "../../components/Styles";
 import { Link } from "react-router-dom";
-import hero from "../../../assets/mockups/unsplash_SPzzE4TYxZ0.png";
+import hero from "../../../assets/mockups/tractor-min.png";
 import bg from "../../../assets/mockups/Mask Group.png";
 import dot2 from "../../../assets/mockups/Turquoise Circle.png";
 import dot1 from "../../../assets/mockups/Orange Circle.png";
@@ -12,7 +12,7 @@ const Showcase = () => {
     <Cont>
       <Text>
         <h3 className="heading">Tractive Engine</h3>
-        <p className="desc">De-risking the agricultural value chain.</p>
+        <p className="desc">Allows Smallholders Have Access to Smart Tractor, Mini Storage and Marketplace in One Go</p>
         <BtnGrp>
           <Cta>
             <Link to="/sign-up">Get Started</Link>
@@ -63,9 +63,10 @@ const Text = styled.div`
     }
   }
   .desc {
-    font-size: 18px;
+    font-size: 28px;
     margin-bottom: 30px;
     color: var(--black-2);
+    font-weight: 800;
   }
   @media (max-width: 900px) {
     text-align: center;

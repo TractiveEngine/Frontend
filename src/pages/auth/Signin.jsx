@@ -13,21 +13,9 @@ const Signin = () => {
       <Left>
         <div className="header">
           <h3>Welcome to Tractive-Engine!</h3>
-          <p>Join us to de-risk the agricultural value chain together.</p>
+          <p>Sign In to Continue</p>
         </div>
         <Form>
-          <FormControl>
-            <InputField>
-              <label htmlFor="">Full Name</label>
-              <Input type="text" placeholder="Full Name...." />
-            </InputField>
-          </FormControl>
-          <FormControl>
-            <InputField>
-              <label htmlFor="">Phone Number</label>
-              <Input type="text" placeholder="Phone..." />
-            </InputField>
-          </FormControl>
           <FormControl>
             <InputField>
               <label htmlFor="">Email</label>
@@ -47,7 +35,7 @@ const Signin = () => {
           <FormControl>
             <InputField>
               <Cta className="submit">
-                <button type="submit">Get Started</button>
+                <button type="submit">Sign In</button>
               </Cta>
               <p>
                 Don't have an account? <Link to="/sign-up"> Sign Up</Link>
@@ -180,7 +168,7 @@ text-align: center;
   @media (max-width: 900px) {
     display: none;
   }
-/* 
+/*
   .tractor {
     position: absolute;
     top: 8%;
@@ -192,7 +180,7 @@ text-align: center;
     background: #fff;
     height: 120px;
     border-radius: 500px;
-    
+
     z-index: 1;
 
     img {
@@ -203,13 +191,13 @@ text-align: center;
   .field {
     position: absolute;
     top: 10%;
-   
+
     right: 20%;
     z-index: 2;
     width: 45%;
     img {
       width: 100%;
- 
+
     }
   }
   .mobile {
