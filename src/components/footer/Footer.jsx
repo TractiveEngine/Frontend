@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 // import logo from "../../Assets/mockups/Logo.svg";
+import logo from "../../../assets/tr-logo.png";
 import {
   RiMessengerLine,
   RiYoutubeLine,
@@ -15,8 +16,8 @@ const Footer = () => {
       <Left>
         <Logo>
           <Link to="/">
-            {/* <img src={logo} alt="" /> */}
-            Tractive <span>Engine</span>
+            <img className="logo" src={logo} alt="" />
+            {/* Tractive <span>Engine</span> */}
           </Link>
         </Logo>
         <p className="about">
@@ -114,16 +115,21 @@ const Cont = styled.div`
 `;
 const Logo = styled.div`
   img {
-    width: 100px;
+    width: 13rem;
+    
+  }
+
+  .logo{
+    
   }
 
   a {
     color: var(--dark-green);
-    font-size: 18px;
+    font-size: 20px;
 
     span {
       color: var(--wine);
-      font-size: 18px;
+      font-size: 20px;
     }
   }
 `;

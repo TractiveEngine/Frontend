@@ -7,21 +7,19 @@ const Links = (props) => {
   return (
     <LinksCont className={toggle ? "active" : ""}>
       <LinkItem>
-        <Link to="/about">About</Link>
+        <Link to="/">About</Link>
       </LinkItem>
       <LinkItem>
-        <Link to="/product">Products</Link>
+        <Link to="/">Products</Link>
       </LinkItem>
       <LinkItem>
-        <Link to="/pricing">Pricing</Link>
+        <Link to="/">Pricing</Link>
       </LinkItem>
      
      
-      
-
       <LinkItem>
-        <Link to="/signUp" className="cta outline">
-          More
+        <Link to="/sign-up" className="cta outline">
+          Join Us
         </Link>
       </LinkItem>
     </LinksCont>

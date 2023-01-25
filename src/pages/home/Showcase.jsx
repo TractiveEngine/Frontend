@@ -12,7 +12,7 @@ const Showcase = () => {
     <Cont>
       <Text>
         <h3 className="heading">Tractive Engine</h3>
-        <p className="desc">Allows Smallholders Have Access to Smart Tractor, Mini Storage and Marketplace in One Go</p>
+        <p className="desc">Allows Smallholder Farmers have access to smart Machinery, Mini Storage and Marketplace in One Go</p>
         <BtnGrp>
           <Cta>
             <Link to="/sign-up">Get Started</Link>
