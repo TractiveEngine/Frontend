@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { CgClose, CgMenuMotion } from "react-icons/cg";
 import Links from "./Links";
+import logo from "../../../assets/tr-logo.png";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -25,8 +26,8 @@ const Navbar = () => {
     <Nav className={navbar ? "isActive" : ""}>
       <Logo>
         <Link to="/">
-          {/* <img src={logo} alt="" /> */}
-          Tractive <span>Engine</span>
+          <img src={logo} alt="" />
+          {/* Tractive <span>Engine</span> */}
         </Link>
       </Logo>
 
@@ -74,7 +75,9 @@ const Toggle = styled.div`
 `;
 const Logo = styled.div`
   img {
-    width: 100px;
+    width: 50%;
+    // height: 50%;
+    
   }
 
   a {

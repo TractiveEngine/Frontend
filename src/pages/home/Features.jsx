@@ -15,8 +15,8 @@ export const Data = [
     },
     {
         icon: <GoTools/>,
-        title: 'Rent equipment',
-        content: 'Tractors and lot equipment are available for crow-sourced rent.'
+        title: 'Hire machinery & equipment',
+        content: 'Tractors and lot equipment are available for crow-sourced hire.'
     },
     {
         icon: <TiLocation/>,
@@ -31,18 +31,18 @@ export const benefits = [
     icon: <FaHandsHelping />,
     title: "Agents",
     content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem in aliquid consectetur repellendus quo minima!",
+      "Our trained youths (agents) work with farmers, buyers and fleet owners in booking farm fleets and getting farm produce to wholesalers in all Nigerian regions",
   },
   {
     icon: <FaTractor />,
-    title: "Smart Farming",
+    title: "Smart Machinery",
     content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem in aliquid consectetur repellendus quo minima!",
+      "Smallholder farmers get access to smart farm machinery such as tractor, power tiller, combined harvester etc.",
   },
   {
     icon: <GoTools />,
     title: "Marketplace",
     content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem in aliquid consectetur repellendus quo minima!",
+      "Our online marketplace  connects smallholder farmers to equipment, mini-storage and buyers. Thereby eliminating cash-based transactions.​",
   },
 ];
